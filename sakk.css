@@ -1,0 +1,26 @@
+th{
+    background-color: rgb(95, 93, 93);
+    color: azure;
+}
+table{
+    border-collapse: collapse;
+    margin: auto;
+
+}
+.responsivetablazat{
+    overflow-x: auto;
+}
+td{
+    border: 1px solid gray;
+    width: 60px;
+    height: 60px;
+}
+img{
+    width: 100%;
+}
+tr:nth-child(even) td:nth-child(odd){
+    background-color:rgb(167, 165, 165);
+}
+tr:nth-child(odd) td:nth-child(even){
+    background-color:rgb(167, 165, 165);
+}

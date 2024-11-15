@@ -1,0 +1,35 @@
+body{
+    background-image: url(tablazatletoltes/feladat_kutyas/design/hatter.jpg);
+    font-family: Georgia;
+}
+header{
+    background-image: url(tablazatletoltes/feladat_kutyas/design/fejlec.jpg);
+}
+#tarolo{
+    background-color: rgba(250, 238, 224, 0.692);
+
+}
+table{
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+    min-width: 300px;
+    background-color: azure;
+}
+
+tbody tr:nth-child(odd){
+    background-color: lightgray;
+}
+td {
+	border-top: 1px solid gray;
+    text-align: center;
+}
+nav{
+    background-color: lightgreen;
+}
+footer{
+    background-color: darkgreen;
+    color: aliceblue;
+}
+
+

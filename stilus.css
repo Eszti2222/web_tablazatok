@@ -1,0 +1,25 @@
+table, td, th{
+    border: 1px solid gray;
+}
+table{
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+    min-width: 300px;
+}
+thead tr{
+    background-color: orange;
+}
+th{
+    color: purple;
+}
+tbody tr:nth-child(odd){
+    background-color: lightblue;
+}
+.responsivetablazat{
+        overflow-x: auto;
+}
+.osszevont{
+    background-color: brown;
+    color: white;
+}

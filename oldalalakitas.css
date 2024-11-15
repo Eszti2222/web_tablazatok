@@ -1,0 +1,83 @@
+/*
+Minden html oldalra rákerül
+itt alakítsd ki az oldalszerkezetet-a  táblán látható minta alapján
+reszponziv- 700px kerüljenek egymás alá a nav, article, aside, és a
+meüpontok egymás mellé
+
+betűtípusok, menü kialakítása::
+
+Minden táblázatnak saját css-e lesz!
+*/
+*{
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+}
+head{
+    grid-area: h;
+}
+nav{
+    grid-area: n;
+}
+article{
+    grid-area: a;
+}
+aside{
+    grid-area: as;
+}
+footer{
+    grid-area: f;
+    
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr;
+    grid-template-areas: 
+    "h h h"
+    "n a as"
+    "f f f"
+    ;
+}
+nav ul{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px;
+
+}
+nav li{
+    list-style: none;
+    border: 1px solid black;
+    border-radius: 80px;
+    margin: 10px;
+    text-align: center;
+}
+nav a{
+    text-decoration: none;
+    color:black;
+}
+.responsivetablazat{
+    overflow-x: auto;
+}
+
+@media  screen and (max-width: 700px) {
+    nav ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "h"
+        "n"
+        "a"
+        "as"
+        "f"
+        ;
+    }
+    
+}
+
+
